@@ -2,6 +2,8 @@ name: Tags
 
 on:
   push:
+  branches:
+    - '!*'
     tags:
       - 'v*'
       
