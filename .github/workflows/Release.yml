@@ -1,0 +1,23 @@
+name: Tags
+
+on:
+  push:
+    tags:
+      - 'v*'
+      
+jobs:
+  Release-linux-amd64:
+    name: release linux/amd64
+    runs-on: ubuntu-latest 
+    steps:
+    - uses: actions/checkout@v2
+      with:
+          submodules: 'recursive'
+    - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+    - uses: wangyoucao577/go-release-action@v1.16
+      with:
+        goos: linux
+        goarch: amd64
+        project_path: "./cmd/..."
+    
+ 
