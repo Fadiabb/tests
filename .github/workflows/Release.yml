@@ -1,6 +1,6 @@
 name: Tags
 
-on:
+on: 
   push:
     branches:
       - '!*'
