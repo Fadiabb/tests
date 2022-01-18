@@ -22,7 +22,6 @@ jobs:
         with:
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
-          project_path: "./cmd/..."
           binary_name: "test"
 
  
