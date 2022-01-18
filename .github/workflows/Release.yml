@@ -14,10 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
-      - uses:  ngs/go-release.action@v1.0.1
+      - uses: skx/github-action-build@master
         env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          GOOS: linux
-          GOARCH: "amd64"
-          
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: 'example-*'
  
