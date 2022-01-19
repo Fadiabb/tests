@@ -2,10 +2,8 @@ name: Tags
 
 on: 
   push:
-    branches:
-      - '!*'
     tags:
-      - 'v*'
+      - '*'
       
 jobs:      
   releases-matrix:
@@ -14,10 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
-      - name: github-action-publish-binaries
-        uses: skx/github-action-publish-binaries@release-2.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v2
         with:
-          args: 'example-*'
- 
+          version: latest
+          args: release --rm-dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}     
+      - name: Upload assets
+        uses: actions/upload-artifact@v2
+        with:
+          name: myapp
+          path: dist/*
