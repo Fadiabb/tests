@@ -20,7 +20,7 @@ jobs:
             
       - run: mkdir -p dist
       - name: Build
-        run: go build -o./dist/ -v .
+        run: go build -o ./dist/ -v .
       
       
       - uses: actions/upload-artifact@v2
