@@ -28,6 +28,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: dist/tests
+          tag: ${{ github.ref }}
           asset_name: mything
           overwrite: true
           body: "This is my release text"
