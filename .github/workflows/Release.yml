@@ -21,7 +21,7 @@ jobs:
       
       - run: | 
           go build -o ./dist/ -v .
-          ls /dist/
+          ls dist/
       
       - name: build
         uses: svenstaro/upload-release-action@v2
