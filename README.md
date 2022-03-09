@@ -1,5 +1,6 @@
 
 
 Some tests ....see
-```go:main.go[4-5]
-```
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./main.go) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
