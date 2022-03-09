@@ -2,6 +2,7 @@ name: markdown-autodocs
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:        
   auto-update-readme:
