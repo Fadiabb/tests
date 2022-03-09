@@ -1,13 +1,10 @@
 name: markdown-autodocs
 
 on:
-  workflow_run:
-    workflows:
-      - generate-artifacts
-    types:
-      - completed
+  workflow_dispatch:
+  push:
 
-jobs:        
+jobs:
   auto-update-readme:
       runs-on: ubuntu-latest
       steps:
@@ -15,4 +12,4 @@ jobs:
         - name: Markdown autodocs
           uses: dineshsonachalam/markdown-autodocs@v1.0.4
           with:
-            output_file_paths: ./
+           output_file_paths: '[./README.md,./docs/example.md]'
