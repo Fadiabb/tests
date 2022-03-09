@@ -2,8 +2,7 @@ name: Embed code in README
 
 on:
   push:
-    branches:
-      - main
+
 
 jobs:
   embed-code:
