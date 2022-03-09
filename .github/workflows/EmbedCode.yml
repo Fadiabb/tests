@@ -11,5 +11,4 @@ jobs:
         - uses: actions/checkout@v2
         - name: Markdown autodocs
           uses: dineshsonachalam/markdown-autodocs@v1.0.4
-          with:
-           output_file_paths: '[./docs/example.md]'
+        
