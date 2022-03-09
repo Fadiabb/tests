@@ -8,3 +8,4 @@ Some tests ....see
 func main() {
 ```
 <!-- MARKDOWN-AUTO-DOCS:END -->
+[docs](./docs/first.md)
