@@ -3,6 +3,6 @@
 Some tests ....see
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./main.go) -->
-<!-- The below code snippet is automatically added from ./main.go -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
 
 xxxxxx
