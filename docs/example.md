@@ -13,3 +13,8 @@ func main() {
 }
 ```
 <!-- MARKDOWN-AUTO-DOCS:END -->
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../docs/scripts/test.sh) -->
+<!-- MARKDOWN-AUTO-DOCS:END -->
+
+
