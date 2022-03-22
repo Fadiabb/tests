@@ -3,7 +3,6 @@ name: markdown-autodocs
 on: 
   push:
     branches:
-      - "build"
       - "master"
   pull_request:
 
