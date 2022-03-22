@@ -1,5 +1,6 @@
 # test
 
+....
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=../main.go&lines=3-6) -->
 <!-- The below code snippet is automatically added from ../main.go -->
 ```go
