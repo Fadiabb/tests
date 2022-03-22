@@ -1,6 +1,11 @@
 name: markdown-autodocs
 
-on: [workflow_dispatch, push]
+on: 
+  push:
+    branches:
+      - "build"
+      - "master"
+  pull_request:
 
 jobs:
   auto-update-readme:
