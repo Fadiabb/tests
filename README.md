@@ -2,7 +2,7 @@
 
 Some tests ....see
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./main.go) -->
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./main.go&lines=8-8) -->
 <!-- The below code snippet is automatically added from ./main.go -->
 ```go
 package main
