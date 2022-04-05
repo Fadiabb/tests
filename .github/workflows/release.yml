@@ -21,6 +21,6 @@ jobs:
         goarch: ${{ matrix.goarch }}
         goversion: "latest"
         build_flags: -v
-        project_path: ./cmd/
+        build_command: build ./cmd/...
 
 
