@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        # build and publish in parallel: linux/386, linux/amd64, linux/arm64, windows/386, windows/amd64, darwin/amd64, darwin/arm64
-        goos: [linux, windows]
+        goos: [linux]
         goarch: [amd64]
     steps:
     - uses: actions/checkout@v2
@@ -22,5 +21,5 @@ jobs:
         goarch: ${{ matrix.goarch }}
         goversion: "latest"
         build_flags: -v
-        project_path: "./cmd/first"
+        project_path: ./cmd/first
 
