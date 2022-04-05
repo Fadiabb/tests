@@ -20,7 +20,15 @@ jobs:
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         goversion: "latest"
-        build_flag: -v
-        build_command: make build
-        project_path: ./
-  
+        build_flags: -v
+        project_path: ./cmd/first
+        binary_name: first
+    - uses: wangyoucao577/go-release-action@v1.25
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        goos: ${{ matrix.goos }}
+        goarch: ${{ matrix.goarch }}
+        goversion: "latest"
+        build_flags: -v
+        project_path: ./cmd/second
+        binary_name: second
