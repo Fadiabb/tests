@@ -20,6 +20,6 @@ jobs:
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
         goversion: "latest"
-        build_command: go build ./cmd/...
+        build_command: make build
 
 
