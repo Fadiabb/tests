@@ -22,4 +22,5 @@ jobs:
         goversion: "latest"
         build_flag: -v
         build_command: make build
+        project_path: ./
   
