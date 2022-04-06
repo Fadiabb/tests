@@ -22,6 +22,7 @@ jobs:
         goversion: "latest"
         build_flags: -v
         project_path: ./cmd/first
+        binary_name: first
     - uses: wangyoucao577/go-release-action@v1.25
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -30,3 +31,4 @@ jobs:
         goversion: "latest"
         build_flags: -v
         project_path: ./cmd/second
+        binary_name: secone
