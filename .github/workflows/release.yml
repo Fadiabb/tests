@@ -32,4 +32,4 @@ jobs:
         build_flags: -v
         project_path: ./cmd/second
         binary_name: secone
-        extra_files: README.md /docs/test.md
+        extra_files: README.md /docs/first.md
