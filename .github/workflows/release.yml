@@ -23,7 +23,7 @@ jobs:
         build_flags: -v
         project_path: ./cmd/first
         binary_name: first
-        extra_files: README.md ./docs/first.md ./docs/example.md ./docs/seconde.md
+        extra_files: README.md ./docs/first.md ./docs/example.md ./docs/second.md
     - uses: wangyoucao577/go-release-action@v1.25
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -33,4 +33,4 @@ jobs:
         build_flags: -v
         project_path: ./cmd/second
         binary_name: secone
-        extra_files: README.md ./docs/first.md ./docs/example.md ./docs/seconde.md
+        extra_files: README.md ./docs/first.md ./docs/example.md ./docs/second.md
