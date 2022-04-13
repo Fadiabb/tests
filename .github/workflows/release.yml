@@ -21,7 +21,7 @@ jobs:
         goarch: ${{ matrix.goarch }}
         goversion: "latest"
         build_flags: -v
-        build_command: make build
+        build_command: make
         project_path: ./cmd/
         sha256sum: true
         md5sum: false
