@@ -21,20 +21,7 @@ jobs:
         goarch: ${{ matrix.goarch }}
         goversion: "latest"
         build_flags: -v
-        project_path: ./cmd/first
-        binary_name: first
-        sha256sum: true
-        md5sum: false
-        extra_files: README.md ./docs/first.md ./docs/example.md ./docs/second.md
-    - uses: wangyoucao577/go-release-action@v1.25
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        goos: ${{ matrix.goos }}
-        goarch: ${{ matrix.goarch }}
-        goversion: "latest"
-        build_flags: -v
-        project_path: ./cmd/second
-        binary_name: secone
+        project_path: ./cmd/...
         sha256sum: true
         md5sum: false
         extra_files: README.md ./docs/first.md ./docs/example.md ./docs/second.md
