@@ -8,8 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-    - uses: wangyoucao577/go-release-action@v1.25
-      env:
+    - uses: wangyoucao577/go-release-action@v1.26
+      with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
         GOOS: linux
