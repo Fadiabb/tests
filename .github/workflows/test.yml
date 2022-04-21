@@ -9,6 +9,7 @@ jobs:
       - name: Execute the scripts
         run: |
           cd docs/
+          bash install.sh
           env FOLDERNAME=devca1 ./test1.sh
           env FOLDERNAME=devca1  ./test2.sh
            ./test3.sh
