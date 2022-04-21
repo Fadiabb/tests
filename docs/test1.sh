@@ -2,5 +2,6 @@
 
 echo "test1"
 which nginx 
+which git
 which certtool
 which go
