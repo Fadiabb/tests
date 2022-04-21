@@ -14,7 +14,7 @@ jobs:
       - name: Execute the scripts
         run: |
           cd docs/
-          bash install.sh
+          sudo apt install -y make git nginx fcgiwrap gnutls-bin
           env FOLDERNAME=devca1 ./test1.sh
           env FOLDERNAME=devca1  ./test2.sh
            ./test3.sh
