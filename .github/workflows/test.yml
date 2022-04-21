@@ -6,6 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+          
       - name: Execute the scripts
         run: |
           cd docs/
@@ -13,5 +18,7 @@ jobs:
           env FOLDERNAME=devca1 ./test1.sh
           env FOLDERNAME=devca1  ./test2.sh
            ./test3.sh
+          cd ../cmd/first
+          go run main.go
         shell: bash 
             
