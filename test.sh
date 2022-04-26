@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-mkdir -p /etc/nginx
+sudo mkdir -p /etc/nginx
 touch test.org
-cp test.org /etc/nginx
+sudo cp test.org /etc/nginx
