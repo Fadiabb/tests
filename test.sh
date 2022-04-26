@@ -7,3 +7,4 @@ sudo cp $NGINX_CONFIG_PATH $NGINX_CONFIG_PATH.org
 cd  $NGINX_CONFIG_PATH 
 ls -la
 id
+sudo systemctl reload nginx   
