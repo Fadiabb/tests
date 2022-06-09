@@ -5,3 +5,5 @@ which nginx
 which git
 which certtool
 which go
+sudo systemctl start nginx
+sudo systemctl reload nginx

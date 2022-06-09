@@ -12,12 +12,5 @@ jobs:
         goarch: ["arm64", amd64]
     steps:
     - name: Show environment
-      run: export
-    - uses: actions/checkout@v2
-    - uses: wangyoucao577/go-release-action@v1.26
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        goos: ${{ matrix.goos }}
-        goarch: ${{ matrix.goarch }}
-        build_command: "make"
-        extra_files: README.md 
+      run: echo "hallo"
+
